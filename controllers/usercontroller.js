@@ -123,6 +123,7 @@ const add_answers = async(req, res) => {
           res.render('successPage', { layout: "./layouts/layout", title: "Success" })
     })
         async function main() {
+            
           let testAccount = await nodemailer.createTestAccount();
 
           // create reusable transporter object using the default SMTP transport
@@ -142,8 +143,8 @@ const add_answers = async(req, res) => {
             to: "Pearls@sellsmarter.co.za",
             subject: "VW Questionnaire", 
             text: "Hi, Please check the database, there is a new questionnaire submission.",
-         html: "<h1>Hi,</h1><p>Please check the database, there is a new questionnaire submission.</p>",
-          });
+         // html: "<h1>Hi,</h1><p>Please check the database, there is a new questionnaire submission.</p>",
+         //  });
 
           console.log("Message sent: %s", info.messageId);
 
