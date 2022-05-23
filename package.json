@@ -1,7 +1,7 @@
 {
   "name": "kulani",
   "version": "1.0.0",
-  "description": "Questionnaire",
+  "description": "Aon",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
