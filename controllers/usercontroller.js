@@ -143,12 +143,12 @@ const add_answers = async(req, res) => {
             to: "Pearls@sellsmarter.co.za",
             subject: "VW Questionnaire", 
             text: "Hi, Please check the database, there is a new questionnaire submission.",
-         // html: "<h1>Hi,</h1><p>Please check the database, there is a new questionnaire submission.</p>",
-         //  });
+         html: "<h1>Hi,</h1><p>Please check the database, there is a new questionnaire submission.</p>",
+          });
 
-          // console.log("Message sent: %s", info.messageId);
+          console.log("Message sent: %s", info.messageId);
 
-          // console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+          console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
         }
 
         main().catch(console.error);
